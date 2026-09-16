@@ -314,7 +314,7 @@
       // background photo fills nearly the whole section, and masking that
       // would fade the line for an entire section, which is exactly what
       // was asked not to happen — only bounded content images qualify.
-      const CONTENT_SELECTOR = 'h1, h2, h3, p, .btn, .about-tag, .approach-word, .contact-item, .about-photo, .editorial-photo, .sponsor-logo-lg';
+      const CONTENT_SELECTOR = 'h1, h2, h3, p, .btn, .about-tag, .approach-word, .contact-item, .about-photo, .editorial-photo, .sponsor-logo-lg, .meal-gallery img';
       const SVG_NS = 'http://www.w3.org/2000/svg';
 
       const SECTION_IDS = ['home', 'sponsor', 'about', 'approach', 'services', 'packages', 'meal-plans', 'contact'];
