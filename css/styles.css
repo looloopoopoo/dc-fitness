@@ -732,7 +732,11 @@ main { position: relative; }
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
 }
 
-.packages .editorial-photo { object-position: 50% 12%; }
+/* This specific photo is a tall portrait (466x960), not landscape like the
+   other editorial photos — matching the box to its real aspect ratio (not
+   cropping toward a corner of a 4:3 box) is what actually keeps the whole
+   person in frame. */
+.packages .editorial-photo { aspect-ratio: 466 / 960; object-position: 50% 50%; }
 .meal-plans .editorial-photo { object-position: 50% 40%; }
 
 .editorial-heading {
