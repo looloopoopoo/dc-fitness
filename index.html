@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DC Fitness & Nutrition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="page-flow" id="pageFlow" aria-hidden="true">
+  <svg class="page-flow-svg" id="pageFlowSvg">
+    <defs>
+      <mask id="pageFlowMask" maskUnits="userSpaceOnUse" x="0" y="0" width="0" height="0">
+        <rect id="pageFlowMaskBase" x="0" y="0" width="0" height="0" fill="#ffffff"/>
+        <g id="pageFlowMaskContent" fill="#2b2b2b"></g>
+      </mask>
+    </defs>
+    <path id="pageFlowPath" class="page-flow-path" mask="url(#pageFlowMask)"></path>
+  </svg>
+  <span class="page-flow-arrow" id="pageFlowArrow">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 12h15m0 0l-5.5-5.5M18 12l-5.5 5.5"/>
+    </svg>
+  </span>
+</div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="brand">
+    <span class="brand-mark">
+      <img src="assets/img/logo.png" alt="DC Fitness & Nutrition" class="brand-logo" id="logo-img">
+      <svg id="logo-placeholder" class="logo-placeholder" viewBox="0 0 120 120" role="img" aria-hidden="true">
+        <defs>
+          <linearGradient id="lgGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f3d885"/>
+            <stop offset="45%" stop-color="#d4af37"/>
+            <stop offset="100%" stop-color="#9c7a1f"/>
+          </linearGradient>
+          <linearGradient id="lgSilver" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f4f4f4"/>
+            <stop offset="50%" stop-color="#b7b7b7"/>
+            <stop offset="100%" stop-color="#7d7d7d"/>
+          </linearGradient>
+        </defs>
+        <circle cx="60" cy="60" r="54" fill="#0a0a0a" stroke="url(#lgGold)" stroke-width="4"/>
+        <circle cx="60" cy="60" r="46" fill="none" stroke="url(#lgGold)" stroke-width="1" opacity="0.5"/>
+        <line x1="18" y1="60" x2="102" y2="60" stroke="url(#lgSilver)" stroke-width="3" stroke-linecap="round"/>
+        <rect x="14" y="50" width="6" height="20" rx="2" fill="url(#lgSilver)"/>
+        <rect x="21" y="46" width="5" height="28" rx="2" fill="url(#lgSilver)"/>
+        <rect x="100" y="50" width="6" height="20" rx="2" fill="url(#lgGold)"/>
+        <rect x="94" y="46" width="5" height="28" rx="2" fill="url(#lgGold)"/>
+        <text x="60" y="73" text-anchor="middle" font-family="Oswald, Arial, sans-serif" font-weight="700" font-size="40" letter-spacing="-3">
+          <tspan fill="url(#lgSilver)">D</tspan><tspan fill="url(#lgGold)">C</tspan>
+        </text>
+      </svg>
+    </span>
+    <span class="brand-text" id="logo-text">
+      <span class="brand-name">DC FITNESS<em>&nbsp;&amp; NUTRITION</em></span>
+      <span class="brand-tag">TRAIN&nbsp;|&nbsp;FUEL&nbsp;|&nbsp;TRANSFORM</span>
+    </span>
+  </a>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home"><span>Home</span></a>
+    <a href="#sponsor"><span>Sponsor</span></a>
+    <a href="#about"><span>About</span></a>
+    <a href="#approach"><span>Approach</span></a>
+    <a href="#services"><span>Services</span></a>
+    <a href="#packages"><span>Packages</span></a>
+    <a href="#meal-plans"><span>Meal Plans</span></a>
+    <a href="#contact"><span>Contact</span></a>
+  </nav>
+
+  <a href="#contact" class="btn btn-primary nav-cta"><span>Get In Touch</span></a>
+</header>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="hero-media">
+      <img src="assets/img/dan-gym-photo.jpeg" alt="Dan Collins training at DC Fitness &amp; Nutrition" class="hero-bg-img" id="heroBgImg">
+      <div class="hero-overlay"></div>
+      <div class="hero-pin-fade"></div>
+    </div>
+
+    <div class="hero-inner">
+      <p class="eyebrow hero-eyebrow" data-anim="hero-fade">DC FITNESS &amp; NUTRITION</p>
+      <h1 class="hero-title">
+        <span class="line-mask"><span class="hero-word" data-anim="hero-line">TRAIN.</span></span>
+        <span class="line-mask"><span class="hero-word gold" data-anim="hero-line">FUEL.</span></span>
+        <span class="line-mask"><span class="hero-word" data-anim="hero-line">TRANSFORM.</span></span>
+      </h1>
+      <p class="hero-sub" data-anim="hero-fade">Coaching and nutrition built around you — real plans, real accountability, real results.</p>
+      <div class="hero-actions" data-anim="hero-fade">
+        <a href="#packages" class="btn btn-primary">
+          <span>View Packages</span>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Get In Touch</span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="sponsor" class="sponsor">
+    <div class="sponsor-inner">
+      <p class="eyebrow sponsor-eyebrow" data-sponsor="1">PROUDLY SPONSORED BY</p>
+      <div class="sponsor-logo-wrap" data-sponsor="2">
+        <img src="assets/img/sponsor-brainbru.png" alt="Brain Bru logo" class="sponsor-logo-lg">
+      </div>
+      <h2 class="sponsor-name-lg" data-sponsor="3">BRAIN BRU</h2>
+      <p class="sponsor-tagline" data-sponsor="3">Energy &amp; hydration powered by Yerba Mate and electrolytes, built for training, focus and recovery.</p>
+      <p class="sponsor-code" data-sponsor="3b">Use code <strong>DC10</strong> for 10% off your first order</p>
+      <a class="btn btn-primary" href="https://brainbru.store" target="_blank" rel="noopener" data-sponsor="4">
+        <span>Visit brainbru.store &rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-grid">
+      <div class="about-media">
+        <img src="assets/img/dan-gym-photo.jpeg" alt="Dan Collins, DC Fitness &amp; Nutrition coach" class="about-photo" id="aboutPhoto">
+      </div>
+      <div class="about-copy">
+        <div class="about-step">
+          <p class="eyebrow">THE COACH</p>
+          <h2 class="about-name">DAN<br><span class="gold">COLLINS</span></h2>
+        </div>
+        <div class="about-step">
+          <p class="about-bio">Coach behind DC Fitness &amp; Nutrition — a paid footballer who brings that same athlete's discipline into every strength &amp; nutrition plan he builds.</p>
+        </div>
+        <div class="about-step">
+          <ul class="about-tags">
+            <li class="about-tag">Chester &middot; Saltney</li>
+            <li class="about-tag">Semi-Pro Footballer</li>
+            <li class="about-tag">Strength &amp; Nutrition Coach</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="approach">
+    <div class="approach-pin">
+      <p class="eyebrow approach-eyebrow">WHAT ARE YOU HERE TO BECOME?</p>
+      <div class="approach-word-stage">
+        <span class="approach-word" data-word="1">TRAIN.</span>
+        <span class="approach-word gold" data-word="2">FUEL.</span>
+        <span class="approach-word" data-word="3">TRANSFORM.</span>
+      </div>
+      <p class="approach-support">Coaching and nutrition built around you — real plans, real accountability, real results.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="services-head">
+      <p class="eyebrow">WHAT'S ON OFFER</p>
+      <h2>Training &amp; Coaching</h2>
+    </div>
+
+    <div class="services-viewport">
+      <div class="services-track">
+        <article class="service-panel">
+          <span class="service-panel-index">01</span>
+          <h3 class="service-panel-title">Strength Training</h3>
+          <p class="service-panel-desc">Structured strength programming built around your goals, technique and progression.</p>
+        </article>
+        <article class="service-panel">
+          <span class="service-panel-index">02</span>
+          <h3 class="service-panel-title">Nutrition Coaching</h3>
+          <p class="service-panel-desc">Personalised nutrition guidance to fuel training, recovery and everyday life.</p>
+        </article>
+        <article class="service-panel">
+          <span class="service-panel-index">03</span>
+          <h3 class="service-panel-title">1-1 Coaching</h3>
+          <p class="service-panel-desc">Direct, ongoing coaching and accountability — built around you, not a generic plan.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="editorial packages">
+    <div class="editorial-grid">
+      <div class="editorial-media">
+        <img src="assets/img/packages-photo.jpg" alt="Strength training in progress on a pull-up bar" class="editorial-photo">
+      </div>
+      <div class="editorial-copy">
+        <p class="eyebrow">WHAT'S ON OFFER</p>
+        <h2 class="editorial-heading">Training Packages</h2>
+        <p class="editorial-lead">Structured strength training, coaching and accountability — built around your goals, not a generic plan off a shelf.</p>
+        <p class="editorial-status">Full package tiers and pricing are being finalised. Message Dan directly and he'll get you started early.</p>
+        <a href="#contact" class="btn btn-primary"><span>Get In Touch</span></a>
+      </div>
+    </div>
+
+    <!--
+      REAL PACKAGE TIERS GO HERE once pricing is ready — name, what's
+      included, who it's for, price, sign-up link. Follow the
+      .service-panel pattern above or extend .editorial-copy per tier.
+    -->
+  </section>
+
+  <section id="meal-plans" class="editorial meal-plans">
+    <div class="editorial-grid editorial-grid-reverse">
+      <div class="editorial-media">
+        <img src="assets/img/meal-plans-photo.jpg" alt="Balanced high-protein meal prep bowls" class="editorial-photo">
+      </div>
+      <div class="editorial-copy">
+        <p class="eyebrow">NUTRITION</p>
+        <h2 class="editorial-heading">Meal Plans</h2>
+        <p class="editorial-lead">Personalised nutrition guidance built around your training, recovery and everyday life — not a one-size-fits-all sheet.</p>
+        <p class="editorial-status">Plans are built individually, direct with Dan — the full meal plan library is on its way. Message him to get one built around you.</p>
+        <a href="#contact" class="btn btn-primary"><span>Get In Touch</span></a>
+      </div>
+    </div>
+
+    <!--
+      REAL MEAL PLANS GO HERE once ready — name, short description,
+      macro breakdown or price for each.
+    -->
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-head">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2 class="contact-heading"><span class="contact-heading-half">Let's</span> <span class="contact-heading-half">Talk</span></h2>
+      <p class="section-sub">Based in Chester, Saltney — drop a message anytime.</p>
+    </div>
+
+    <div class="contact-grid">
+      <a class="contact-item" href="mailto:dancollins336@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">dancollins336@gmail.com</span>
+      </a>
+      <a class="contact-item" href="tel:07511573372">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">07511 573372</span>
+      </a>
+      <a class="contact-item" href="https://instagram.com/dcfitness&nutrition" target="_blank" rel="noopener">
+        <span class="contact-label">Instagram</span>
+        <span class="contact-value">@dcfitness&amp;nutrition</span>
+      </a>
+      <a class="contact-item" href="https://tiktok.com/@Dancollinsx3" target="_blank" rel="noopener">
+        <span class="contact-label">TikTok</span>
+        <span class="contact-value">@Dancollinsx3</span>
+      </a>
+      <div class="contact-item">
+        <span class="contact-label">Location</span>
+        <span class="contact-value">Chester, Saltney</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> DC Fitness &amp; Nutrition. Train | Fuel | Transform.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+</body>
+</html>
